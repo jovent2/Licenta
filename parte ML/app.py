@@ -49,7 +49,7 @@ def parse_request():
     s=str(lng+lat)
     import requests
     response = requests.get(
-        "http://api.openweathermap.org/data/2.5/weather?lat="+str(lat)+"&lon="+str(lng)+"&units=metric&appid=3115eebc4cf11050d8bd391b72cf50ad")
+        "http://api.openweathermap.org/data/2.5/weather?lat="+str(lat)+"&lon="+str(lng)+"&units=metric&appid=")
     json=response.json()
     temp=json['main']['temp']
     wind=json['wind']['speed']
